@@ -1,0 +1,33 @@
+set tabstop=2
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
+set autoindent
+set cindent
+
+set number
+
+set enc=utf-8
+set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+
+"set langmenu=zh_CN.UTF-8
+"language message zh_CN.UTF-8
+"set guifont=YouYuan:h12
+"set helplang=cn
+
+set nocompatible
+set confirm
+
+set nobackup
+
+set ruler
+
+set hlsearch
+
+syn on
+filetype on
+filetype plugin on
+filetype indent on
+
+colorscheme peachpuff
