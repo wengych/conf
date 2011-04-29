@@ -2,3 +2,8 @@ alias apt-search='apt-cache search'
 alias apt-install='sudo apt-get install'
 alias apt-update='sudo apt-get update'
 alias apt-upgrade='sudo apt-get upgrade'
+
+alias sshb1='ssh build01.dev.office.fizzback.net'
+alias sshb2='ssh build02.dev.office.fizzback.net'
+
+alias ll='ls -l'
