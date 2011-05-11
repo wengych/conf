@@ -8,8 +8,8 @@
   branch = auto
 
 [core]
-  safecrlf = warn
-  autocrlf = true
+  #safecrlf = warn
+  #autocrlf = true
   editor = vi
 
 [alias]

@@ -7,3 +7,4 @@ alias sshb1='ssh build01.dev.office.fizzback.net'
 alias sshb2='ssh build02.dev.office.fizzback.net'
 
 alias ll='ls -l'
+alias la='ls -la'
