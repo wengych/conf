@@ -3,8 +3,11 @@ alias apt-install='sudo apt-get install'
 alias apt-update='sudo apt-get update'
 alias apt-upgrade='sudo apt-get upgrade'
 
-alias sshb1='ssh build01.dev.office.fizzback.net'
-alias sshb2='ssh build02.dev.office.fizzback.net'
+alias virls='sudo virsh list --all'
+alias vircon='sudo virsh console'
+alias virxml='sudo virsh dumpxml'
+alias virup='sudo virsh start'
+alias virdown='sudo virsh destroy'
 
 alias ll='ls -l'
 alias la='ls -la'

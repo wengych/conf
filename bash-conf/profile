@@ -1,0 +1,63 @@
+# My profile
+if [ `uname` = 'Darwin' ]; then
+  export PYTHONPATH=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/
+  export PATH=${HOME}/bin:/opt/local/bin:/opt/local/sbin:$PATH:${HOME}/node_modules/.bin:/usr/local/mysql/bin
+
+  alias ls='ls -G'
+  alias ll='ls -l'
+  alias less='less -R'
+
+  alias grep='grep --colour=always'
+
+  . ${HOME}/git/maven-bash-completion/bash_completion.bash
+
+  # bash completion for git.
+  . /opt/local/share/doc/git-core/contrib/completion/git-completion.bash 
+
+  alias sts='open /Developer/springsource/sts-2.8.1.RELEASE/STS.app'
+  alias jenkins-cli='java -jar /Users/weng/bin/jenkins-cli.jar -s http://jenkins.wengych.com/'
+
+  alias tomcat-start='sudo launchctl load /Library/LaunchDaemons/org.macports.tomcat6.plist'
+  alias tomcat-stop='sudo launchctl unload /Library/LaunchDaemons/org.macports.tomcat6.plist'
+
+  alias chickenvnc='/Applications/Chicken\ of\ the\ VNC.app/Contents/MacOS/Chicken\ of\ the\ VNC'
+fi
+
+if [ `uname` = 'Linux' ]; then
+  alias apt-search='apt-cache search'
+  alias apt-install='sudo apt-get install'
+  alias apt-update='sudo apt-get update'
+  alias apt-upgrade='sudo apt-get upgrade'
+fi
+
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
+export SVN_EDITOR="vim"
+
+# alias fuck.gfw=' ssh -NfD 9000 wengych@ps34683.dreamhost.com'
+alias fuck.gfw='ssh -NfD 9000 wengych@wengych.com'
+alias linode='ssh wengych@wengych.com'
+alias hp='ssh -i ${HOME}/.ssh/hpdefault.pem ubuntu@hp.wengych.com'
+
+alias jetty_debug='MAVEN_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=y" mvn jetty:run'
+alias java_debug='JAVA_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=y" '
+alias mvnnt='MAVEN_OPTS="-Dmaven.test.skip=true" mvn'
+alias git-cd-root='cd `git rev-parse --show-toplevel`'
+
+alias virls='sudo virsh list --all'
+alias vircon='sudo virsh console'
+alias virxml='sudo virsh dumpxml'
+alias virup='sudo virsh start'
+alias virdown='sudo virsh destroy'
+
+alias dev1='ssh sysadmin@dev1.cn.fizzback.net'
+alias dev2='ssh sysadmin@dev2.cn.fizzback.net'
+alias dev3='ssh sysadmin@dev3.cn.fizzback.net'
+alias dev4='ssh sysadmin@dev4.cn.fizzback.net'
+
+if [ -f "$HOME/.bashrc" ]; then
+  source $HOME/.bashrc
+fi
+
+
+s() { ssh $1.fizzback.net; }
+

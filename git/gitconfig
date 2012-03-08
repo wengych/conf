@@ -11,6 +11,7 @@
   #safecrlf = warn
   #autocrlf = true
   editor = vi
+	excludesfile = /Users/weng/.gitignore_global
 
 [alias]
   st = status
