@@ -28,6 +28,3 @@ fi
 
 echo "create softlink for .gitconfig"
 ln -s $PWD/git/gitconfig ~/.gitconfig
-
-echo "create softlink for bin
-ln -s $PWD/bin ~/bin
